@@ -1,0 +1,6 @@
+{
+	"appId": "com.example.app",
+	"appName": "fullscreen",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
