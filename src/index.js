@@ -1,3 +1,3 @@
 import "./index.css";
-// import "./fullScreen.js";
-console.log("");
+import "./fullScreen.js";
+import "./testHttps.js";

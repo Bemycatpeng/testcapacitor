@@ -4,3 +4,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.imgContent {
+  height: 150px;
+  width: 180px;
+  background-color: pink;
+}
+img {
+  width: 100%;
+}

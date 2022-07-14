@@ -9,7 +9,7 @@ module.exports = {
 
   /* ============ 出口 ============ */
   output: {
-    filename: "main.js",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
     // 配置每次 build 执行前，将 dist 文件夹清空
     clean: true,
@@ -22,6 +22,7 @@ module.exports = {
       template: path.resolve(__dirname, "./src/index.html"),
       //输出文件名
       filename: "index.html",
+      inject: "body",
     }),
   ],
 
