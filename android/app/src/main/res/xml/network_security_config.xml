@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
-  <base-config>
+  <!-- <base-config cleartextTrafficPermitted="true">
     <trust-anchors>
       <certificates src="user" />
       <certificates src="system"/>
+    </trust-anchors>W
+  </base-config> -->
+
+  <domain-config >
+    <domain includeSubdomains="true">10.168.1.108</domain>
+    <trust-anchors>
+      <certificates src="@raw/my_ca"/>
     </trust-anchors>
-  </base-config>
+  </domain-config>
+
+  <!-- <debug-overrides>
+    <trust-anchors>
+      <certificates src="@raw/my_ca"/>
+    </trust-anchors>
+  </debug-overrides> -->
+
+
+  <!-- <domain-config>
+    <domain includeSubdomains="true">10.168.1.108</domain>
+    <trust-anchors>
+      <certificates src="@raw/my_ca"/>
+    </trust-anchors>
+  </domain-config> -->
+
+
+
 </network-security-config>
